@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .container {
+        background-color: #f0f0f0;
+        display: flex;
+        width: 100%;
+        padding: 4em 0;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .rectangulo {
+        width: 700px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .header {
+        background-color: #335d65;
+        padding: 25px 60px;
+        height: 2em;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .portada {
+        display: flex;
+        width: 100%;
+      }
+
+      .title {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 34px;
+        margin: auto 0;
+      }
+
+      .image {
+        transform: scaleX(-1);
+        width: 40%;
+        object-fit: cover;
+        object-position: 100% 0;
+      }
+
+      .middle {
+        background-color: #ffffff;
+        padding: 15px 60px;
+        color: black;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .middle-first {
+        margin: 50px 0;
+      }
+
+      .subtitle {
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .description {
+        font-weight: 400;
+        font-size: 17px;
+        text-align: justify;
+      }
+
+      .description a {
+        color: black;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .text {
+        font-weight: 600;
+        font-size: 15px;
+      }
+
+      .button {
+        background-color: #335d65;
+        border-radius: 20px;
+        padding: 10px 100px;
+        color: white !important;
+        font-weight: 500;
+        font-size: 18px;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .button:hover {
+        background-color: #335d84;
+        transition: 0.4s;
+        transform: scale(1.05);
+      }
+
+      .footer {
+        background-color: #335d65;
+        padding: 25px 60px;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .title-footer {
+        font-weight: 600;
+        font-size: 15px;
+        color: white;
+      }
+
+      .icon {
+        text-decoration: none;
+        margin-right: 1em;
+      }
+
+      .icon:hover svg {
+        transition: 0.4s;
+        transform: scale(1.07);
+      }
+
+      .video {
+        height: 325px;
+      }
+
+      @media (max-width: 1050px) {
+        .image {
+          min-height: 70px;
+        }
+      }
+
+      @media (max-width: 850px) {
+        .rectangulo {
+          width: 70%;
+        }
+
+        .icon {
+          margin-right: 0.5em;
+        }
+
+        .video {
+          height: 225px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .rectangulo {
+          width: 90%;
+        }
+
+        .slider,
+        .checkMode {
+          left: 30px;
+          top: 25px;
+        }
+
+        .description {
+          font-size: 14px;
+        }
+
+        .header,
+        .middle,
+        .footer {
+          padding: 25px 30px;
+        }
+
+        .title {
+          font-size: 25px;
+        }
+
+        .logo {
+          width: 50%;
+        }
+
+        .button {
+          padding: 10px 70px;
+        }
+
+        .icon {
+          margin-right: 0.2em;
+        }
+
+        .video {
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <input type="checkbox" class="checkMode" /> -->
+      <!-- <span class="slider round"></span> -->
+      <div class="rectangulo">
+        <div class="header"></div>
+        <img
+          src="https://solzapata.github.io/imgs/SolZap.png"
+          class="portada"
+          alt="Ilustración de una mujer desarrolladora"
+        />
+        <div class="middle">
+          <div class="middle-first">
+            <h2 class="subtitle">Hola! Soy Sol</h2>
+            <p class="description">
+              Tengo 24 años y soy desarrolladora frontend. También soy
+              estudiante de Analista Universitario en Sistemas.
+            </p>
+            <img
+              src="https://c.tenor.com/3mh7gjCQpKQAAAAC/simpsons-nerd.gif"
+              width="100%"
+              height="auto"
+              alt="Simpsons Nerd GIF"
+            />
+            <p class="description">
+              Tengo experiencia trabajando en proyectos en equipo. Hace dos años
+              desarrollo en React JS. Pero además manejo otras tecnologías como
+              Angular, Java, C, C++, MySQL y MongoDB.
+            </p>
+            <p class="description">
+              Lo que más disfruto es crear maquetas lindas, dinámicas y
+              accesibles.
+            </p>
+            <img
+              width="100%"
+              height="auto"
+              loading="lazy"
+              src="https://www.omnisend.com/blog/wp-content/uploads/2016/09/funny-gifs-9.gif"
+              alt="Gif emoción"
+              class="wp-image-2324"
+            />
+            <p class="description">
+              <a href="">Acá</a> podés ver el código fuente de este newsletter.
+            </p>
+          </div>
+          <div class="middle-first">
+            <p class="text">Podés ver más trabajos míos con HTML:</p>
+            <a href="https://solzapata.github.io/" target="_blank">
+              <button class="button">Click!</button>
+            </a>
+          </div>
+          <div class="middle-first">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/Ga_RwPmx-N0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="video"
+            ></iframe>
+            <p class="description">Gracias por su tiempo!</p>
+          </div>
+        </div>
+        <div class="footer">
+          <h3 class="title-footer">© 2021 - Todos los derechos reservados</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
